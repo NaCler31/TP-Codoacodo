@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: aliceblue;
+    background-color: rgb(20, 20, 20);
+    box-sizing: border-box;
+    background-color: black;
+
+    .nav {
+        backdrop-filter: blur(6px);
+        position: fixed;
+        top: 0em;
+        left: 0em;
+        height: 0.5em;
+        width: 100%;
+        max-width: 100%;
+
+        .nav-ul {
+            display: flex;
+            color: aliceblue;
+            background-color: rgb(20, 20, 20);
+            box-sizing: border-box;
+
+            li {
+                list-style: none;
+                padding: 0.8em;
+                margin: 0.8em;
+
+                a {
+                    width: 62%;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: aliceblue;
+                    margin: 1.0em;
+                    padding: 0.8em;
+                    border-radius: 8px;
+                    background-color: rgb(20, 20, 20);
+
+
+
+                    &:hover {
+                        color: rgb(253, 253, 253);
+                        width: 52em;
+                        margin: 1em;
+                        box-sizing: border-box;
+                        /* color: rgb(37, 174, 238); */
+                        background-color: rgb(37, 174, 238);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+header {
+    width: 100%;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    height: 550px;
+
+
+}
+
+/*carrucel*/
+.slider-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* Centramos el contenedor del carrusel */
+}
+
+.slider-container img {
+    width: 100%;
+    /* La imagen ocupará todo el ancho del contenedor */
+    height: 684px;
+    /* Mantendrá la proporción de la imagen */
+    display: block;
+    /* Elimina cualquier espacio blanco debajo de la imagen */
+}
+
+.logo {
+    border-radius: 30em;
+    width: 9em;
+    margin: 2em;
+    position: relative;
+    top: -30em;
+    left: 1em;
+    box-sizing: border-box;
+    border: 4px solid rgb(37, 174, 238);
+}
+
+
+
+/* //section dos nosotros  */
+.section-nosotros {
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.section-nosotros-title {
+    font-size: 30px;
+    margin: 0 auto;
+    height: 2em;
+    text-align: center;
+    background-color: rgb(87, 84, 84);
+    border-radius: 0 15px 0 15px;
+}
+
+.section-nosotros-card {
+
+    background-color: rgb(87, 84, 84);
+    margin: 1em auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    gap: 1em;
+    text-align: center;
+
+    &:hover {
+        background-color: rgb(145, 141, 141);
+    }
+
+    img {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+
+/*seccion cabañas*/
+.section-cabañas {
+    border: 1px solid white;
+/* Borde de la caja */
+    padding: 18px;
+    /* Espaciado interno */
+    margin: 1px;
+    /* Espaciado externo */
+    width: 94%;
+    /* Ancho de la caja */
+    height: 50%;
+    /* Altura de la caja */
+    color: white;
+    /* Color del texto */
+    font-family: sans-serif;
+    /* Tipo de fuente */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    border-radius: 5px;
+    /* Bordes redondeados */
+
+    h1 {
+        text-align: center;
+        font-size: 20px;
+        margin: 1em;
+
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+/* comenzamos con las card */
+.card-container {
+    display: flex;
+    flex-direction: column row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.4em;
+    align-items: center;
+    padding: 0.8em;
+    gap: 1em;
+
+}
+
+.card {
+    border: 1px solid rgb(243, 238, 238);
+    width: 40%;
+    height: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8em;
+    margin-right: 1.8em;
+    list-style: none;
+    border-radius: 8;
+    background-color: rgb(20, 20, 20);
+    box-sizing: border-box;
+    border-radius: 1em;
+    transition: all 0.3s ease-in-out;
+    gap: 1em;
+
+    &:hover {
+        background-color: rgb(145, 141, 141);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.8em;
+        margin-right: 1.8em;
+        list-style: none;
+        border: 1px solid;
+        border-radius: 1.3em;
+    }
+}
+
+
+.formulario {
+    width: 50%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 4em auto;
+    padding: 2em auto;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgb(243, 238, 238);
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(95, 95, 95);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    gap: 5em;
+    border-radius: 1em;
+    border: 1px solid cyan;
+
+    &:hover {
+        background-color: rgb(71, 69, 69);
+    }
+}
+
+.section-mapa {
+    width: 82%;
+    height: 480px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2em auto;
+    padding: 1em auto;
+    text-align: center;
+
+    h2 {
+        width: 100px;
+        height: 1px;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .card-map {
+        width: 100%;
+        height: 380px;
+        background-color: rgb(70, 75, 75);
+        margin: 1em auto;
+        border-radius: 8px;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+        gap: 1em;
+        text-align: center;
+        border-radius: 22px;
+
+        &:hover {
+            background-color: rgb(145, 141, 141);
+        }
+
+        .card-map-i {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0.8em;
+            margin-right: 1.8em;
+            list-style: none;
+            border: 1px solid;
+            border-radius: 22px;
+            padding: 2em auto;
+            margin-bottom: 3em;
+
+        }
+    }
+}
+
+.contacto-container {
+
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0.8em;
+    position: relative;
+    top: -2em;
+    left: 1em;
+    font-size: 18px;
+
+
+    .contacto {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        top: 1.4em;
+    }
+}
+
+
+.item-contactos {
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8em;
+
+    margin-right: 1.8em;
+    list-style: none;
+
+
+    .li {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.8em;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 5%;
+    margin-top: 22em;
+    padding-top: 1em;
+    text-align: center;
+    gap: 2em;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(70, 75, 75);
+
+    &:hover {
+        background-color: rgb(145, 141, 141);
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        overflow-x: hidden;
+
+        header {
+            backdrop-filter: blur(3px);
+        }
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .contacto {
+
+        .nav {
+            background-color: rgba(239, 20, 20, 0.843);
+
+            header {
+                backdrop-filter: blur(6px);
+            }
+
+            .nav-ul {
+                background-color: rgba(0, 0, 0, 0.404);
+
+                flex-direction: column;
+                text-align: center;
+                justify-content: space-around;
+                border: 1px solid;
+                border-radius: 8px;
+
+                .nav-li {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 0.1em;
+                    margin-right: 0.1px;
+                    list-style: none;
+                    border: 1px solid;
+                    border-radius: 8px;
+                    padding: 2em auto;
+                    margin-bottom: 0.1em;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .card {
+        margin-top: 6em;
+    }
+
+}

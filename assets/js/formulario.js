@@ -1,4 +1,4 @@
-const formRegister=document.getElementById("formulario")
+const formRegister=document.getElementById("formulario");
 const inputNombre=document.getElementById("nombre");
 const inputEmail=document.getElementById("email");
 const inputMotivo=document.getElementById("motivo");
@@ -14,15 +14,15 @@ parrafo.innerHTML="";
 let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 if(inputNombre.value.length<3){
-   warning+=`Escriba un nombre<br>`
+   warning+="Escriba un nombre<br>";
    valor=true;
 }
 if(!regexEmail.test(inputEmail.value)){
-    warning+=`Escriba un email<br>`
+    warning+="Escriba un email válido<br>";
     valor=true;
 }
 if(inputMotivo.value=="default"){
-    warning+=`Elija una opcion <br>`
+    warning+="Elija una opcion <br>";
     valor=true;
 }
 if(valor){

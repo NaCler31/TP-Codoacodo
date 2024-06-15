@@ -267,38 +267,35 @@
             </div>
         </section>
 
-        <section class="formulario">
-        <form id="formulario" method="post">
-            <p>
-                <label for="nombre">Nombre:</label>
-                <input id="nombre" name="nombre" type="text"/>
-            </p>
+       <section class="formulario">
 
-            <p>
-                <label for="email">Correo Electrónico:</label>
-                <input id="email" name="email" type="text"/>
-            </p>
 
-            <p>
-                <select name="motivo" id="motivo">
-                    <option value="default">Motivo</option>
-                    <option value="op1">Consulta</option>
-                    <option value="op2">Reservar</option>
-            </p>
-                </select>
-             
-            <p>
-                <label>
-                    <input type="checkbox" id="terms" name="terms" required>
-                    Acepto los términos y condiciones
+            <form id="formulario" method="post">
+                <p>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Nombre" />
+                </p>
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" placeholder="Email" />
+                </p>
+                <p>
+                <p>
+                    <select name="seleccione" id="seleccione">
+                        <option value="default">Seleccione </option>
+                        <option value="op1">Reserva</option>
+                        <option value="op2">Consulta</option>
+                      
+                    </select>
+                </p>
 
-                </label>
-            </p>    
-            <button type="submit">Enviar</button>
-            <p id="error" class="error"></p>
-        </form>
-    </section>
-
+                <button type="submit">Enviar</button>
+                <p id="error" class="error"></p>
+                <div id="mensajeEnviado" style="display: none;">
+                    ¡El formulario se envió correctamente!
+                </div>
+            </form>
+        </section>
 
         <!--Ubicacion-->
         <section id="ubicacion">

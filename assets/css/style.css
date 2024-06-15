@@ -221,19 +221,10 @@ header {
 
 
 .formulario {
-    width: 50%;
+    width: 100%;
     max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 4em auto;
-    padding: 2em auto;
-    margin-bottom: 5em;
-    margin-top: 2em;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    border-bottom: 1px solid rgb(243, 238, 238);
-    box-sizing: border-box;
     text-align: center;
+    padding: 15px;
     background-color: rgb(95, 95, 95);
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
@@ -245,6 +236,8 @@ header {
         background-color: rgb(71, 69, 69);
     }
 }
+
+
 
 .section-mapa {
     width: 82%;

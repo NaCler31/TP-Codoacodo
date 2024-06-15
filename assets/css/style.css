@@ -219,10 +219,17 @@ header {
     }
 }
 
-
 .formulario {
     width: 100%;
     max-width: 1024px;
+    
+    margin: 4em auto;
+    padding: 2em auto;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+ 
     text-align: center;
     padding: 15px;
     background-color: rgb(95, 95, 95);
